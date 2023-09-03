@@ -1,42 +1,55 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+h1 {
   text-align: center;
+  background-color: rgb(224, 62, 62);
+  color: white;
+  padding: 10px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.msgBox {
+  box-shadow: 2px 2px 13px rgb(116, 112, 112);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 10px;
+  text-align: center;
+  font-style: italic;
+  font-size: 18px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.btnsDiv {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
-.card {
-  padding: 2em;
+.btnsDiv button,
+.btn {
+  border: 2px solid white;
+  background-color: crimson;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.read-the-docs {
-  color: #888;
+.btnsDiv button:hover,
+.btn:hover {
+  color: crimson;
+  background-color: white;
+  border: 2px solid crimson;
 }
